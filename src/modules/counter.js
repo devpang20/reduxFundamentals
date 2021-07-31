@@ -7,7 +7,7 @@
  export const increase = () => ({ type: INCREASE })
  export const decrease = () => ({ type: DECREASE })
 
- const intialState = {
+ const initialState = {
      number: 0
  };
 
