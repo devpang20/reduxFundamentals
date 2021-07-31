@@ -1,5 +1,5 @@
 ## redux fundamentals
 
-[ ] Vanilla-Redux
+[ x ] Vanilla-Redux
 
 [ ] React-Redux
