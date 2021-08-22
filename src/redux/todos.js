@@ -3,11 +3,11 @@ const TOGGLE_TODO = "todo/TOGGLE_TODO";
 const DELETE_TODO = "todo/DELETE_TODO";
 
 let nextId = 1;
-export const addTodo = (content) => ({
+export const addTodo = (text) => ({
   type: ADD_TODO,
   todo: {
     id: nextId++,
-    content,
+    text,
     checked: false,
   },
 });
@@ -22,7 +22,17 @@ export const deleteTodo = (id) => ({
   id,
 });
 
-const todos = (state = [], action) => {
+const initialState = [
+  /* data example
+  {
+    id: 1,
+    text: "item",
+    check: false,
+  },
+  */
+];
+
+const todos = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
       return state.concat(action.todo);

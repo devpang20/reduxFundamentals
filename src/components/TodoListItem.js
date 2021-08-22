@@ -9,7 +9,7 @@ const TodoListItem = ({ todo, onDelete, onToggle }) => {
         checked={todo.checked}
         onChange={() => onToggle(todo.id)}
       />
-      <span>{todo.content}</span>
+      <span>{todo.text}</span>
       <button onClick={() => onDelete(todo.id)}>삭제</button>
     </div>
   );

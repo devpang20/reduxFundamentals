@@ -8,7 +8,7 @@ import { addTodo, deleteTodo, toggleTodo } from "./redux/todos";
 const App = () => {
   const todos = useSelector((state) => state.todos);
   const dispatch = useDispatch();
-  const onInsert = (content) => dispatch(addTodo(content));
+  const onInsert = (text) => dispatch(addTodo(text));
   const onToggle = (id) => dispatch(toggleTodo(id));
   const onDelete = (id) => dispatch(deleteTodo(id));
 
