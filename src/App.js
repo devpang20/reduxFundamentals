@@ -12,8 +12,6 @@ const App = () => {
   const onToggle = (id) => dispatch(toggleTodo(id));
   const onDelete = (id) => dispatch(deleteTodo(id));
 
-  console.log(todos);
-
   return (
     <div>
       <TodoTemplate>
